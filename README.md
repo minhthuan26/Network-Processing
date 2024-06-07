@@ -12,6 +12,8 @@
   - Encrypt and Decrypt message tranfers between client and server with RSA, AES
 ### Technology
   - Java, JavaFx, OpenCv, Yolo
+### Members
+  - [Le Minh Thuan](https://github.com/minhthuan26)
 ### UI
   - Search film
   ![Search film](./assets/z5515329667938_3707a209add11f7cc3b5b9ef3b5f90fc.jpg)
