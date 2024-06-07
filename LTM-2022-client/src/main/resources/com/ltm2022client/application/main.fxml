@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="wrapPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ltm2022client.application.MainController">
+   <children>
+      <BorderPane layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane fx:id="headerPane" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="titlePane" alignment="CENTER" prefHeight="50.0" prefWidth="1192.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="titleLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="159.0" text="PhornHUB" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="windowControl" alignment="CENTER_RIGHT" layoutX="1002.0" prefHeight="50.0" prefWidth="194.0" styleClass="HBox" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="minimizeBtn" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/minimize_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="resizeBtn" disable="true" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/restore_down_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="closeBtn" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/exit_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0">
+                     <image>
+                        <Image url="@Icons/logo_icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="sidebarPane" prefHeight="750.0" prefWidth="261.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="13.0" layoutY="27.0" prefHeight="750.0" prefWidth="190.0" styleClass="VBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="searchFilmBtn" mnemonicParsing="false" prefWidth="264.0" styleClass="sidebarItem" text="Tìm phim">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/film_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="imageHandleBtn" mnemonicParsing="false" prefWidth="264.0" styleClass="sidebarItem" text="Xử lí ảnh">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/image_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="contentPane" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
