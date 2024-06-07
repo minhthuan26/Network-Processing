@@ -3,7 +3,7 @@
 
 > [!CAUTION]
 > The function **Watch Trailer** and **Find Similar Image from Google** are **NOT COMPLETE**
-# Network Processing
+# Network Processing (Self-project)
 ### Description
   - This project is build for network processing learning base on client-server model
   - 2 mains function:
